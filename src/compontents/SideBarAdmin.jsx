@@ -6,7 +6,7 @@ import { FiLayout, FiGrid, FiSettings, FiLogOut, FiMenu } from 'react-icons/fi';
 import { authClient } from '@/lib/auth-client';
 import { redirect } from 'next/navigation';
 
-const SideBar =  () => {
+const SideBarAdmin =  () => {
     return (
         <div className="drawer lg:drawer-open h-full">
 
@@ -56,9 +56,9 @@ const SideBar =  () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/vendor/products" className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 hover:text-[#7c3aed] hover:bg-purple-50/50 rounded-xl transition-all">
+                                <Link href="/admin/reviews-tickets" className="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 hover:text-[#7c3aed] hover:bg-purple-50/50 rounded-xl transition-all">
                                     <FiGrid className="w-4 h-4" />
-                                    <span>All Tickets</span>
+                                    <span>Manage Tickets</span>
                                 </Link>
                             </li>
                             <li>
@@ -81,4 +81,4 @@ const SideBar =  () => {
     );
 };
 
-export default SideBar;
+export default SideBarAdmin;
