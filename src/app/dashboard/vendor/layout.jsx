@@ -1,13 +1,5 @@
-import SideBar from '@/compontents/SideBar';
-import React from 'react';
+import DashboardLayout from '@/compontents/DashboardLayout';
 
-const LayoutVendor = ({children}) => {
-    return (
-        <div>
-           
-            {children}
-        </div>
-    );
-};
-
-export default LayoutVendor;
+export default function VendorLayout({ children }) {
+  return <DashboardLayout role="vendor">{children}</DashboardLayout>;
+}

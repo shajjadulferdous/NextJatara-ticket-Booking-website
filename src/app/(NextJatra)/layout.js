@@ -1,15 +1,13 @@
 import NextJatraNavbar from '@/compontents/NavBar';
+import NextJatraFooter from '@/compontents/Footer';
 import React from 'react';
-import { Toaster } from 'react-hot-toast';
 
-const layout = ({ children }) => {
+export default function NextJatraLayout({ children }) {
     return (
-        <div>
+        <div className="flex min-h-screen flex-col">
             <NextJatraNavbar />
-            {children}
-             
+            <main className="flex-1 pt-4">{children}</main>
+            <NextJatraFooter />
         </div>
     );
-};
-
-export default layout;
+}
